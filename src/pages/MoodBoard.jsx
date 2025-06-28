@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom"; // <- IMPORTANTE
+import { useNavigate, useLocation } from "react-router-dom";
 import "@fontsource/source-serif-pro";
 
 const buttonsData = [
@@ -73,7 +73,6 @@ const MoodBoard = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Pegando o nome que veio da tela anterior
   const userName = location.state?.userName || "amigo(a)";
 
   return (
@@ -125,7 +124,7 @@ const MoodBoard = () => {
             zIndex: 2,
           }}
         >
-          Oi, {userName} <br /> Qual o seu mood de hoje?
+          Olá, {userName} <br /> Qual o seu mood de hoje?
         </h1>
 
         <div
@@ -146,7 +145,7 @@ const MoodBoard = () => {
               return (
                 <button
                   key={name}
-                  onClick={() => navigate(path)} // <- Continua funcionando normalmente
+                  onClick={() => navigate(path)}
                   onMouseEnter={() => setHoveredButton(name)}
                   onMouseLeave={() => setHoveredButton(null)}
                   style={{

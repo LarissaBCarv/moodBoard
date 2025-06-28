@@ -29,6 +29,29 @@ const Felicidade = () => {
     setImagens((prev) => [...prev, ...novasImagens]);
   };
 
+  const frases = [
+    "Seja gentil sempre que possível. E é sempre possível.",
+    "Ser feliz é deixar de ser vítima dos problemas e se tornar autor da própria história.",
+    "A felicidade não é algo pronto. Ela vem das suas próprias ações.",
+    "A alegria está na luta, no esforço, no sofrimento envolvido.",
+    "Ser feliz sem motivo é a mais autêntica forma de felicidade",
+    "Não existe um caminho para a felicidade. A felicidade é o caminho.",
+    "Saber encontrar a alegria na alegria dos outros é o segredo da felicidade.",
+    "A alegria de fazer o bem é a única felicidade verdadeira.",
+    "Na plenitude da felicidade, cada dia é uma vida inteira.",
+    "Felicidade é a certeza de que a nossa vida não está se passando inutilmente.",
+  ];
+
+  const [indiceFrase, setIndiceFrase] = useState(0);
+
+  useEffect(() => {
+    const intervaloFrase = setInterval(() => {
+      setIndiceFrase((prev) => (prev + 1) % frases.length);
+    }, 4000);
+
+    return () => clearInterval(intervaloFrase);
+  }, []);
+
   return (
     <div
       style={{
@@ -42,7 +65,7 @@ const Felicidade = () => {
         zIndex: 0,
       }}
     >
-      {/* 🔼 Input para upload de imagens */}
+      {/* Input para upload de imagens */}
       <label
         htmlFor="upload-input"
         style={{
@@ -50,7 +73,7 @@ const Felicidade = () => {
           bottom: "20px",
           right: "20px",
           zIndex: 2,
-          background: "#2ea1a9",
+          background: "##2da7b0",
           color: "white",
           padding: "10px 16px",
           borderRadius: "12px",
@@ -62,9 +85,8 @@ const Felicidade = () => {
           transition: "background 0.3s ease",
         }}
         onMouseOver={(e) => (e.currentTarget.style.background = "#25848b")}
-        onMouseOut={(e) => (e.currentTarget.style.background = "#2ea1a9")}
+        onMouseOut={(e) => (e.currentTarget.style.background = "#2da7b0")}
       >
-        📸 Adicionar Imagens
         <input
           id="upload-input"
           type="file"
@@ -73,9 +95,10 @@ const Felicidade = () => {
           onChange={handleUpload}
           style={{ display: "none" }}
         />
+        📷 Adicionar Imagem
       </label>
 
-      {/* 🔊 Vídeo de fundo */}
+      {/* Vídeo de fundo */}
       <video
         autoPlay
         loop
@@ -95,7 +118,7 @@ const Felicidade = () => {
         Seu navegador não suporta vídeos.
       </video>
 
-      {/* 🎵 YouTube Player */}
+      {/* YouTube Player */}
       <div
         style={{
           position: "absolute",
@@ -111,18 +134,18 @@ const Felicidade = () => {
         }}
       >
         <iframe
-          width="560"
-          height="3015"
-          src="https://www.youtube.com/embed/videoseries?si=Rp_toF_J70hyX9nC&amp;list=PLzJBqmiwm2cQOxVsqN_NCEc71Sv1vUNZv"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/videoseries?si=AbUm6cbI_pXsyWke&list=PLzJBqmiwm2cQOxVsqN_NCEc71Sv1vUNZv"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
         ></iframe>
       </div>
 
-      {/* 🌟 Título */}
+      {/* Título */}
       <h1
         style={{
           fontFamily: '"Skillet Condensed", sans-serif',
@@ -137,34 +160,37 @@ const Felicidade = () => {
         Luz e Leveza
       </h1>
 
-      {/* ✨ Frases */}
+      {/* Frases */}
       <div
         style={{
           position: "absolute",
           top: "30px",
           right: "42px",
-          fontSize: "20px",
-          color: "black",
-          fontFamily: "'Source Serif Pro', serif",
+          fontSize: "30px",
+          color: "white",
+          fontFamily: "Luckiest Guy",
           zIndex: 1,
           textShadow: "2px 2px 4px rgba(0,0,0,0.4)",
+          maxWidth: "500px",
+          cursor: "pointer",
         }}
+        onClick={() => setIndiceFrase((prev) => (prev + 1) % frases.length)}
+        title="Clique para próxima frase"
       >
-        "Seja gentil sempre que possível. E é sempre possível." <br />– Dalai
-        Lama
-        <br />
-        "Ser feliz é deixar de ser vítima dos problemas e se tornar <br />
-        autor da própria história."
-        <br />– Fernando Pessoa
+        {frases[indiceFrase].split("<br>").map((line, i) => (
+          <p key={i} style={{ margin: "0 0 0.5em 0" }}>
+            {line}
+          </p>
+        ))}
       </div>
 
-      {/* 🎧 Spotify Player */}
+      {/* Spotify Player */}
       <div
         style={{
           position: "absolute",
-          bottom: "20px",
+          bottom: "-40px",
           left: "20px",
-          width: "220px",
+          width: "200px",
           zIndex: 1,
           opacity: 0.85,
         }}
@@ -173,14 +199,14 @@ const Felicidade = () => {
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUIDYTCle9M9?utm_source=generator&theme=0"
           width="350"
-          height="100"
+          height="250"
           frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
       </div>
 
-      {/* 📸 Carrossel rotacionado */}
+      {/* Carrossel rotacionado */}
       <div
         onClick={() => setIndexAtual((prev) => (prev + 1) % imagens.length)}
         style={{
@@ -194,9 +220,9 @@ const Felicidade = () => {
           boxShadow: "0 4px 10px rgba(0,0,0,0.4)",
           transform: "rotate(10deg)",
           zIndex: 1,
-          cursor: "pointer", // 👈 importante indicar que pode clicar
+          cursor: "pointer",
         }}
-        title="Clique para trocar a imagem" // 👈 dica ao passar o mouse
+        title="Clique para trocar a imagem"
       >
         <img
           src={imagens[indexAtual]}

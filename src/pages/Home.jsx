@@ -4,8 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   const [hover, setHover] = useState(false);
-  const [name, setName] = useState(""); // state para nome
-
+  const [name, setName] = useState("");
   const handleStart = () => {
     if (name.trim() === "") {
       alert("Por favor, insira seu nome para continuar.");

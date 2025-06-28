@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bahiana&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,8 +20,57 @@ body,
 @font-face {
   font-family: "Skillet Condensed";
   src: url("./assets/fonts/Fontspring-DEMO-skillet-regular.otf")
-    format("truetype");
+    format("opentype");
   font-weight: normal;
+  font-style: normal;
+}
+.grechen-fuemen-regular {
+  font-family: "Grechen Fuemen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.bahiana-regular {
+  font-family: "Bahiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.gluten-<uniquifier > {
+  font-family: "Gluten", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.sour-gummy-<uniquifier > {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.lugrasimo-regular {
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
   font-style: normal;
 }
 
