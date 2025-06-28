@@ -116,7 +116,7 @@ const MoodBoard = () => {
       >
         <h1
           style={{
-            fontFamily: '"Skillet Condensed", sans-serif',
+            fontFamily: "DynaPuff, system-ui, sans-serif",
             fontSize: "80px",
             textAlign: "center",
             color: "#5c5470",
@@ -157,7 +157,7 @@ const MoodBoard = () => {
                     backgroundColor: isHovered ? "#cbaaf7" : bgColor,
                     color: isHovered ? "#027361" : textColor,
                     cursor: "pointer",
-                    fontFamily: '"Skillet Condensed", sans-serif',
+                    fontFamily: "DynaPuff, system-ui, sans-serif",
                     transition: "all 0.3s ease",
                     boxShadow: isHovered
                       ? "0 4px 10px rgba(0,0,0,0.2)"

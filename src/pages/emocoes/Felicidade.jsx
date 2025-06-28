@@ -148,7 +148,7 @@ const Felicidade = () => {
       {/* Título */}
       <h1
         style={{
-          fontFamily: '"Skillet Condensed", sans-serif',
+          fontFamily: "DynaPuff, system-ui, sans-serif",
           fontSize: "160px",
           textAlign: "center",
           color: "#8cf7ff",

@@ -47,7 +47,7 @@ const Home = () => {
 
       <h1
         style={{
-          fontFamily: '"Skillet Condensed", sans-serif',
+          fontFamily: "DynaPuff, system-ui, sans-serif",
           fontSize: "160px",
           textAlign: "center",
           color: "#027361",
@@ -79,7 +79,7 @@ const Home = () => {
         value={name}
         onChange={(e) => setName(e.target.value)}
         style={{
-          fontFamily: '"Skillet Condensed", sans-serif',
+          fontFamily: "DynaPuff, system-ui, sans-serif",
           fontSize: "1.2rem",
           padding: "0.8rem 1.2rem",
           borderRadius: "999px",
@@ -99,7 +99,7 @@ const Home = () => {
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         style={{
-          fontFamily: '"Skillet Condensed", sans-serif',
+          fontFamily: "DynaPuff, system-ui, sans-serif",
           padding: "1rem 2.5rem",
           fontSize: "clamp(1rem, 4vw, 1.2rem)",
           borderRadius: "999px",
