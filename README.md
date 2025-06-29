@@ -1,18 +1,48 @@
-# moodBoard
+# 🎨 Mood Board
 
-Aplicativo React que gera moodboards personalizados com base na emoção escolhida. Combina imagens, paleta de cores, frases e músicas usando APIs externas. Layout responsivo, animações suaves e tema claro/escuro. Projeto focado em experiência visual, interatividade e criatividade.
+Projeto de um mood board interativo, feito com carinho para organizar inspirações visuais de forma simples e estilosa.
 
 ---
 
-# React + Vite
+## 💡 Participação Criativa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto teve colaboração direta da minha noiva, Ana Flávia, estudante de Publicidade e Propaganda, que foi responsável por toda a parte visual e criativa do mood board.
+O olhar estético e o bom gosto dela deram alma ao projeto, trazendo harmonia e personalidade à composição.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Link para acessar
 
-## Expanding the ESLint configuration
+Acesse o projeto online aqui:  
+👉 [MoodBoard](https://mood-board-zeta.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 💻 Tecnologias usadas
+
+- React
+- CSS3
+- Vercel (para deploy)
+
+---
+
+## 🚀 Como rodar localmente
+
+1. Clone o repositório:
+git clone https://github.com/LarissaBCarv/moodBoard.git
+
+2. Entre na pasta do projeto:
+cd seu-repositorio
+
+3. Instale as dependências:
+npm install
+
+4. Rode o projeto:
+npm start
+
+O app estará disponível em:
+http://localhost:3000
+
+
+
+
+
