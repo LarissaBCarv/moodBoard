@@ -116,7 +116,7 @@ const MoodBoard = () => {
       >
         <h1
           style={{
-            fontFamily: "DynaPuff, system-ui, sans-serif",
+            fontFamily: "Sour Gummy, sans-serif",
             fontSize: "80px",
             textAlign: "center",
             color: "#5c5470",
@@ -124,7 +124,7 @@ const MoodBoard = () => {
             zIndex: 2,
           }}
         >
-          Olá, {userName} <br /> Qual o seu mood de hoje?
+          Olá {userName} !<br /> Qual o seu mood de hoje?
         </h1>
 
         <div
